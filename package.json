@@ -6,7 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/et786/storefront-backend.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/et786/storefront-backend/issues"
+  },
+  "homepage": "https://github.com/et786/storefront-backend#readme",
+  "devDependencies": {
+    "dotenv": "^15.0.0"
+  }
 }
