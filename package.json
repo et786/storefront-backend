@@ -11,7 +11,8 @@
     "yarn": "yarn",
     "jasmine": "jasmine",
     "start": "nodemon src/server.ts",
-    "nodemon": "nodemon"
+    "nodemon": "nodemon",
+    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess 'node ./dist/server.js'"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "nodemon": "^2.0.15",
     "npx": "^10.2.2",
     "pg": "^8.7.3",
-    "tsc": "^2.0.4"
+    "tsc": "^2.0.4",
+    "tsc-watch": "^4.6.0"
   }
 }
