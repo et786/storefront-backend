@@ -18,15 +18,18 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express = __importStar(require("express"));
-const bodyParser = __importStar(require("body-parser"));
-const app = express();
-const address = "0.0.0.0:3000";
+var express_1 = __importDefault(require("express"));
+var bodyParser = __importStar(require("body-parser"));
+var app = (0, express_1.default)();
+var address = "0.0.0.0:3000";
 app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.send('Hello World!');
 });
 app.listen(3000, function () {
-    console.log(`starting app on: ${address}`);
+    console.log("starting app on: ".concat(address));
 });

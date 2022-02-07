@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && npm run jasmine",
+    "lint": "eslint './src/server.ts'",
+    "prettier": "prettier --config .prettierrc './src/**/*.ts' --write",
+    "build": "npx tsc",
+    "yarn": "yarn",
+    "jasmine": "jasmine",
+    "start": "nodemon src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,8 +24,21 @@
   },
   "homepage": "https://github.com/et786/storefront-backend#readme",
   "devDependencies": {
+    "@types/jasmine": "^3.10.3",
+    "typescript": "^4.5.5",
+    "yarn": "^1.22.17"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
     "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "pg": "^8.7.3"
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15",
+    "npx": "^10.2.2",
+    "pg": "^8.7.3",
+    "tsc": "^2.0.4"
   }
 }
