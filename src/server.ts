@@ -2,7 +2,8 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app: express.Application = express();
-const address = "0.0.0.0:3000";
+const port = 7861
+const address = `0.0.0.0:${port}`
 
 app.use(bodyParser.json());
 
@@ -10,8 +11,8 @@ app.get("/", (req: express.Request, res: express.Response): void => {
   res.send("/");
 });
 
-app.listen(3000, function () {
-  console.log(`starting app on: ${address}`);
+app.listen(port, function () {
+  console.log(`Server listening on ${address}...`);
 });
 
 export default app;
