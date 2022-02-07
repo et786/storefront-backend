@@ -1,5 +1,7 @@
 "use strict";
-describe("PLACEHOLDER", function () {
-    it("TEST", function () {
+describe("placeholder", function () {
+    it("expect to be shown in console", function () {
+        // trivial test
+        expect(1).toBe(1);
     });
 });
