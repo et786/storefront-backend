@@ -1,7 +1,7 @@
 import express from "express";
 import router from "./routes/router";
 import bodyParser from "body-parser";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 const app: express.Application = express();
 const port = 7861;
