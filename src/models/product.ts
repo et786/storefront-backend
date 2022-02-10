@@ -1,3 +1,5 @@
+import Client from "../database";
+
 export type Product = {
   id: number;
   name: string;
@@ -7,12 +9,12 @@ export type Product = {
   available: boolean;
 };
 
-export class Products {
+export class ProductStore {
   async index(): Promise<Product[]> {
     try {
       // @ts-ignore
       const conn = await Client.connect();
-      const sql = "SELECT * FROM books";
+      const sql = "SELECT * FROM products";
 
       const result = await conn.query(sql);
 
