@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ENV=test db-migrate --env test up && jasmine && db-migrate db:drop test",
+    "test": "ENV=test db-migrate up --env test && jasmine && db-migrate db:drop test",
     "lint": "eslint './src/server.ts'",
     "prettier": "prettier --config .prettierrc './src/**/*.ts' --write",
     "build": "npx tsc",

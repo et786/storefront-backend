@@ -3,13 +3,18 @@ import { Product, ProductStore } from "../models/product";
 const store = new ProductStore();
 
 describe("Index of products", () => {
-  it("should have method index", () => {
+  it("should exist", () => {
     expect(store.index).toBeDefined();
   });
 
-  it("method index should return an array of products", async () => {
+  it("should return an array of products", async () => {
+    try {
     const result = await store.index();
     expect(result).toEqual([]);
+    } catch(error){
+      console.log(error);
+    }
+    
   });
 });
 

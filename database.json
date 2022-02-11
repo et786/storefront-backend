@@ -2,6 +2,7 @@
     "dev": {
       "driver": "pg",
       "host": "127.0.0.1",
+      "name": "storefront",
       "user": "ahmed",
       "password": "IceCream96"
 

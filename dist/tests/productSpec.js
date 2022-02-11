@@ -39,18 +39,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var product_1 = require("../models/product");
 var store = new product_1.ProductStore();
 describe("Index of products", function () {
-    it("should have method index", function () {
+    it("should exist", function () {
         expect(store.index).toBeDefined();
     });
-    it("method index should return an array of products", function () { return __awaiter(void 0, void 0, void 0, function () {
-        var result;
+    it("should return an array of products", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var result, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, store.index()];
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, store.index()];
                 case 1:
                     result = _a.sent();
                     expect(result).toEqual([]);
-                    return [2 /*return*/];
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_1 = _a.sent();
+                    console.log(error_1);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
             }
         });
     }); });
