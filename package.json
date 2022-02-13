@@ -1,59 +1,59 @@
 {
-  "name": "storefront-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "ENV=test db-migrate up --env test && jasmine && db-migrate db:drop test",
-    "lint": "eslint './src/server.ts'",
-    "prettier": "prettier --config .prettierrc './src/**/*.ts' --write",
-    "build": "npx tsc",
-    "yarn": "yarn",
-    "jasmine": "jasmine",
-    "start": "nodemon src/server.ts",
-    "nodemon": "nodemon",
-    "db-migrate": "db-migrate",
-    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess 'node ./dist/server.js'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/et786/storefront-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/et786/storefront-backend/issues"
-  },
-  "homepage": "https://github.com/et786/storefront-backend#readme",
-  "devDependencies": {
-    "@types/jasmine": "^3.10.3",
-    "@types/supertest": "^2.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.10.2",
-    "eslint": "^8.8.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1",
-    "supertest": "^6.2.2",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.5",
-    "yarn": "^1.22.17"
-  },
-  "dependencies": {
-    "@types/express": "^4.17.13",
-    "@types/pg": "^8.6.4",
-    "db-migrate": "^0.11.13",
-    "db-migrate-pg": "^1.2.2",
-    "dotenv": "^16.0.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.2",
-    "jasmine": "^4.0.2",
-    "jasmine-spec-reporter": "^7.0.0",
-    "jsonwebtoken": "^8.5.1",
-    "nodemon": "^2.0.15",
-    "npx": "^10.2.2",
-    "pg": "^8.7.3",
-    "tsc": "^2.0.4",
-    "tsc-watch": "^4.6.0"
-  }
+    "name": "storefront-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "ENV=test db-migrate up --env test && jasmine && db-migrate db:drop shopping_test",
+        "lint": "eslint './src/server.ts'",
+        "prettier": "prettier --config .prettierrc './src/**/*.ts' --write",
+        "build": "npx tsc",
+        "yarn": "yarn",
+        "jasmine": "jasmine",
+        "start": "nodemon src/server.ts",
+        "nodemon": "nodemon",
+        "db-migrate": "db-migrate",
+        "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess 'node ./dist/server.js'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/et786/storefront-backend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/et786/storefront-backend/issues"
+    },
+    "homepage": "https://github.com/et786/storefront-backend#readme",
+    "devDependencies": {
+        "@types/jasmine": "^3.10.3",
+        "@types/supertest": "^2.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.10.2",
+        "eslint": "^8.8.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.5.1",
+        "supertest": "^6.2.2",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.5",
+        "yarn": "^1.22.17"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.13",
+        "@types/pg": "^8.6.4",
+        "db-migrate": "^0.11.13",
+        "db-migrate-pg": "^1.2.2",
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "jasmine": "^4.0.2",
+        "jasmine-spec-reporter": "^7.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "nodemon": "^2.0.15",
+        "npx": "^10.2.2",
+        "pg": "^8.7.3",
+        "tsc": "^2.0.4",
+        "tsc-watch": "^4.6.0"
+    }
 }

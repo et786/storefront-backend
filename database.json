@@ -2,16 +2,16 @@
     "dev": {
       "driver": "pg",
       "host": "127.0.0.1",
-      "name": "storefront",
-      "user": "ahmed",
+      "name": "shopping",
+      "user": "shopping_user",
       "password": "IceCream96"
 
     },
     "test": {
       "driver": "pg",
       "host": "127.0.0.1",
-      "name": "storefront_test",
-      "user": "ahmed",
+      "name": "shopping_test",
+      "user": "shopping_user_test",
       "password": "IceCream96"
     },
 

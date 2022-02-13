@@ -9,12 +9,11 @@ describe("Index of products", () => {
 
   it("should return an array of products", async () => {
     try {
-    const result = await store.index();
-    expect(result).toEqual([]);
-    } catch(error){
+      const result = await store.index();
+      expect(result).toEqual([]);
+    } catch (error) {
       console.log(error);
     }
-    
   });
 });
 

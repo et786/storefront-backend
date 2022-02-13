@@ -1,0 +1,26 @@
+                                          List of databases
+      Name       |  Owner   | Encoding |   Collate   |    Ctype    |        Access privileges        
+-----------------+----------+----------+-------------+-------------+---------------------------------
+ app1db          | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ fsnddb          | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ mydb            | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres        | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ shopping        | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres                   +
+                 |          |          |             |             | postgres=CTc/postgres          +
+                 |          |          |             |             | shopping_user=CTc/postgres
+ shopping_test   | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres                   +
+                 |          |          |             |             | postgres=CTc/postgres          +
+                 |          |          |             |             | shopping_user_test=CTc/postgres
+ storefront      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres                   +
+                 |          |          |             |             | postgres=CTc/postgres          +
+                 |          |          |             |             | shopping_user=CTc/postgres
+ storefront_test | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/postgres                   +
+                 |          |          |             |             | postgres=CTc/postgres          +
+                 |          |          |             |             | shopping_user_test=CTc/postgres
+ template0       | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres                    +
+                 |          |          |             |             | postgres=CTc/postgres
+ template1       | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres                    +
+                 |          |          |             |             | postgres=CTc/postgres
+ tododb          | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+(11 rows)
+
