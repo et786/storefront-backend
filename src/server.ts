@@ -13,7 +13,9 @@ app.use("/", router);
 
 // Start server
 app.listen(port, function () {
+  //Nothing else to add here for now
   console.log(`Server listening on ${address}...`);
 });
 
 export default app;
+//

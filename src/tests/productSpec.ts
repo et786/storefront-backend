@@ -42,3 +42,5 @@ describe("Delete product", () => {
     expect(store.delete).toBeDefined();
   });
 });
+
+describe("", () => {})
