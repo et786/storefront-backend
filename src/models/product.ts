@@ -13,6 +13,7 @@ export class ProductStore {
   async index(): Promise<Product[]> {
     try {
       // @ts-ignore
+      //const conn = await Client.connect();
       const conn = await Client.connect();
       const sql = "SELECT * FROM products";
 
